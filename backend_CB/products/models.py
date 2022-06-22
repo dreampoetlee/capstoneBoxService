@@ -7,3 +7,4 @@ class Product(models.Model):
   description = models.TextField()
   image = models.ImageField()
   stock = models.IntegerField()
+  

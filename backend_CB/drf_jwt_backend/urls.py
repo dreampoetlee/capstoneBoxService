@@ -20,9 +20,9 @@ from django.urls import path, include
 
 urlpatterns = [
   path('admin/', admin.site.urls),
-  # path('membership/', include('memberships.urls', namespace='memberships')),
   path('api/auth/', include('authentication.urls')),
   path('api/cars/', include('cars.urls')),
+  path('api/products/', include('products.urls')),
 ]
 
 if settings.DEBUG:
