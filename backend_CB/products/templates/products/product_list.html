@@ -15,9 +15,21 @@
   <body>
     <h1>Products List View Page</h1>
 
-    {% for object in object_list %}
-      <p>{{object}}</p>
+    {% block content %}
+      <div class='container'>
+        <div class='row'>
+          <div class='col-sm-4 col-md-4'>
+            <h1>Products List View Page</h1>
 
-    {% endfor %}
+            {% for object in object_list %}
+              <a href='{{ object.get_absolute_url }}'>{{object}}</a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    
+    
+    {% endblock %}
+
   </body>
 </html>
