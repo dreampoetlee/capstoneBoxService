@@ -42,6 +42,9 @@ INSTALLED_APPS = [
 
   'rest_framework',
   'memberships',
+  'shopping',
+  'customers',
+  'address',
   
   'authentication.apps.AuthenticationConfig',
   'corsheaders',
