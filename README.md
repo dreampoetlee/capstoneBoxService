@@ -1,18 +1,26 @@
-# ReactDjango_JWT_StarterCode
+# Capstone Project: Build a Subscription Box Service for Men's Skin Care
 
-Starter code for full stack React + Django applications using JWT for authentication/authorization and a fully working register/login system on the React side
+## Learning Objective
+Use Django REST Framework to build a REST API to serve as the backend for a subscription box company application
 
-## NOTE
+## Technologies
+Django, Django REST Framework, MySQL, Postman
 
-"cars" app in Django backend for example purposes only. Study it closely and review provided resources to understand how to properly create protected endpoints that require a JWT token for authorization.
+## User Stories
+Box services have sprung up in the last few years to offer a certain category of tailored goods (games, makeup, food/drinks, clothes, etc.) to busy people who don't have the time to search out the individual items themselves. Your mission is to make a website for such a subscription box company, including the following features:
 
-## For implementing user roles
+- As a new visitor to the site, I want to be able to enter my info and sign up so I can start receiving regular monthly boxes to my home address.
 
-- see comments in the following files in the order they are listed
-  - backend/authentication/models.py
-  - backend/authentication/serializers.py (note that there are several places needing modification in that file)
-- If modifying the User class in authentication/models.py, make sure to drop your existing database,
-  create it, and run migrations from scratch
-- for a great reference, see the following article: https://simpleisbetterthancomplex.com/tutorial/2018/01/18/how-to-implement-multiple-user-types-with-django.html
-  - note that this article is from 2018 and dealing with a full stack Django application scenario with HTML/CSS templates. The principles of setting up the backend portion for User roles is still valid!
-- once user roles are set up on your backend, you can now utilize them on the frontend. Recommend reviewing the React Router slideshow for ideas on how to use descendant routes and conditional rendering to control who can access what parts of your application based on a role!
+- As a registered user, I want to take a survey (developer created) about my likes/dislikes so I can be put in a targeted demographic to get the exact box contents that I want.
+
+- As a registered user, I want to be able to choose between three different payment tiers for my box service, with each tier being clearly different with what the contents of the box will be.
+
+- As a registered user, I want an easy way to see how much I owe this month so I can budget accordingly.
+
+- As an administrator user, I want to see an account breakdown: the total amount of accounts, what percentage belong to which demographic, and how much money is being paid monthly overall.
+
+- As an administrator user, I want to see a data visualization (line cart) of the popularity of the different types of box services I offer.
+
+- As a registered user, I want to pay for my monthly subscription using PayPal or Stripe API (sandbox account is fine).
+
+- As a developer, I want to have an aesthetically pleasing and intuitive user interface/user experience (UI/UX) with all features of the application stylized. (CSS, Bootstrap, Material UI, etc.)
